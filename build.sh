@@ -1,0 +1,1 @@
+/C/Programme/NASM/nasm.exe -O9 -f bin -o bios.bin -l bios.lst bios.asm
