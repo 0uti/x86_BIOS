@@ -106,23 +106,33 @@ hdc1_cyl_high		equ 01F5h	; HDC 1 - cylinder high
 hdc1_drive_head		equ 01F6h	; HDC 1 - drive/head
 hdc1_status_reg		equ 01F7h	; HDC 1 - status/command register
 
-; LPT x --- 0278-027A
+; LPT 2 --- 0278-027A (LPT 3 in a system with 3 or 4 LPTs)
 
-; COM x --- 02E8-02EF
+; EGA   --- 02B0-02DF (alternate EGA,	primary EGA at 03C0)
 
-; COM x --- 02F8-02FF
+; LPT 4 --- 02BC-02BF
+
+; COM 4 --- 02E8-02EF
+
+; COM 2 --- 02F8-02FF
 
 ; FDC 2 --- 0370-0377
 
 ; FDC 1 --- 03F0-03F7
 
-; LPT x --- 0378-037A
+; LPT 1 --- 0378-037A (LPT 2 in a system with 3 or 4 LPTs)
 
-; LPT x --- 03BC-03BF
+; MDA   --- 03B0-03BF (Monochrome Display Adapter based on 6845)
 
-; COM x --- 03E8-03EF
+; LPT x --- 03BC-03BF (LPT 1 in a system with 3 or 4 LPTs)
 
-; COM x --- 03F8-03FF
+; EGA   --- 03C0-03CF (1st Enhanced Graphics Adapter)	alternate at 02C0
+
+; CGA   --- 03D0-03DF (Color Graphics Adapter)
+
+; COM 3 --- 03E8-03EF
+
+; COM 1 --- 03F8-03FF
 
 ; ------------------- END PERIPHERAL ------------------------------
 
