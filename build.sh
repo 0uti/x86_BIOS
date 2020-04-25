@@ -4,3 +4,5 @@
 /C/Programme/NASM/nasm.exe -O9 -f bin -o FILL48.bin -l FILL48.lst FILL48.asm
 /C/Programme/NASM/nasm.exe -O9 -f bin -o FILL64.bin -l FILL64.lst FILL64.asm
 /C/Programme/NASM/nasm.exe -O9 -f bin -o bios.bin -l bios.lst bios.asm
+./tools/srec_cat.exe bios.bin -binary -split 2 0 -o bios.even.bin -binary
+./tools/srec_cat.exe bios.bin -binary -split 2 1 -o bios.odd.bin -binary
