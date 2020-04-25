@@ -1,0 +1,1 @@
+times 0F000h db 0ffh
